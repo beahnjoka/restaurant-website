@@ -1,0 +1,79 @@
+/* Common styles for the navbar */
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 61px;
+  z-index: 2;
+  margin: 0 0px;
+  padding: 50px;
+}
+
+/* Left side of the navbar */
+.navbarleft h1 {
+  font-size: bold;
+  font-weight: 600;
+  text-decoration: none;
+  color: wheat;
+  text-transform: uppercase;
+}
+
+/* Right side of the navbar */
+.navbarright ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+  font-weight: 500;
+}
+
+.navbarright li {
+  margin-right: 10px;
+  gap: 30px;
+  transition: width 0.3s ease;
+  bottom: 0;
+}
+
+.navbarright li:hover {
+  width: 100%;
+}
+
+.navbarright a {
+  font-size: 25px;
+  color: wheat;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .navbarleft h1 {
+    margin-bottom: 20px;
+  }
+
+  .navbarright {
+    flex-direction: row; /* Display items in a row */
+  }
+
+  .navbarright ul {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .navbarright li {
+    margin-right: 10px;
+  }
+}
+
+/* Background color for the navbar */
+.navbar {
+  background-color: #c0a491; /* Choose your background color */
+}
